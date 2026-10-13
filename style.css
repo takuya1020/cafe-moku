@@ -1,0 +1,198 @@
+html {
+    scroll-behavior: smooth;
+}
+/*ヘッダー*/
+.header {
+    background-color: rgb(250, 250, 250);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header h1 {
+    display: inline-block;
+    padding:10px 20px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.header-menu{
+    margin-left: auto;
+    padding: 10px;
+}
+.header-menu li{
+    display: inline-block;
+    padding: 50px 25px;
+}
+.header-menu a {
+    text-decoration: none;
+    color:#000000;
+}
+.header-menu a:hover {
+    color: #c2c2c2;
+    transition: 0.5s;
+}
+/*メイン*/
+.main-visual {
+    background-image:url("コーヒー画像２.jpg");
+    background-size:cover ;
+    background-position: center;
+    height: 400px;
+}
+#menu {
+    scroll-margin-top: 60px;
+}
+.main-text {
+    padding: 90px 50px 0px;
+}
+.main-text h1 {
+    font-size: 50px;
+    letter-spacing: 8px;
+}
+.main-text p {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.main-text a {
+    display: inline-block;
+    background-color: black;
+    color:rgb(255, 255, 255);
+    padding: 5px 40px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.main-text a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+/*MENU*/
+.main-menu {
+    text-align: center;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.main-menu h1 {
+    padding-bottom: 8px;
+    position: relative;
+}
+.main-menu h1::after {
+content: "";
+position: absolute;
+width: 40px;
+height: 2px;
+background-color: #000;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+}
+.menu-item{
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+}
+.menu-item img {
+    height: 200px;
+    width: 400px;
+}
+.menu-item p {
+    text-align: center;
+    font-weight: 500;
+    margin: 3px 0px;
+}
+/*ABOUT*/
+.about-title {
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+    position: relative;
+}
+.about-title::after {
+content: "";
+position: absolute;
+width: 40px;
+height: 2px;
+background-color: #000;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+}
+.about {
+display: flex;
+justify-content: center;
+margin: 20px;
+}
+.about img {
+height: 200px;
+width: 500px;
+margin: 25px;
+}
+.about p {
+height: 200px;
+width: 500px;
+margin: 25px;
+text-align: left;
+font-size: 20px;
+line-height: 45px;
+letter-spacing: 3px;
+}
+/*フッター*/
+.footer {
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+}
+/*レスポンシブ　スマホ用*/
+@media (max-width: 768px) {
+.header h1 {
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.header-menu li {
+    padding: 20px 10px;
+}
+.main-visual {
+    height: 300px;
+}
+.main-text {
+    padding: 40px 20px 0;
+}
+.main-text h1 {
+    font-size: 35px;
+    letter-spacing:4px;
+}
+.main-text p {
+    font-size:20px;
+    letter-spacing:2px;
+}
+.menu-item img {
+    height: 150px;
+    width: 300px;
+}
+.about {
+    display: block;
+    margin: 20px;
+}
+.about img {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 10px 0px;
+}
+.about p {
+margin: 10px 0px;
+height: 200px;
+width: 100%;
+line-height: 45px;
+letter-spacing: 1px;
+font-size: 16px;
+}
+}
